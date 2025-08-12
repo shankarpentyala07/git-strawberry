@@ -9,3 +9,6 @@ ex: git cat-file -p a32def
 * Merge Commit is a special commit which has 2 parents
 * Other commits has only 1 parent
 
+* Merge vs Rebase
+
+#karam Dosa
