@@ -12,3 +12,4 @@ ex: git cat-file -p a32def
 * Merge vs Rebase
 
 #karam Dosa
+* Dosa batter
