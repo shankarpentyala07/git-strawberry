@@ -140,3 +140,43 @@ main branch -> only 1 branch -> implemented in startups
 =======
 ### Branching Strategy
 
+git reset/revert  --> undo the changes you already committed
+
+reset -> undo the changes before you commit to remote
+
+various types of reset: soft mixed hard
+* soft -> 
+git reset --soft HEAD~1 (changes will come from workspace to staging Area)
+* mixed(default) --> changes will come from local repo to workspace i.e.. delete from local commit, staging area & keep it in workspace
+ex: git reset HEAD~2
+* Hard -->
+git reset HARD~3 (deletes from staging, working area)
+
+if changes are already into remote branches , use git revert
+
+* git revert <commit-hash> - revert the changes, but it will not delete anything, it will add the changes as new commit on top reverted commit
+
+
+squash
+------:
+If a single person is working on one branch, you can squash the multiple commits into single commit
+
+git rebase -i <commit-id>
+not recommended to do in shared branches
+
+
+git stash:
+---------
+when you are working on something in new feature branch , you got an emergency defect,
+when git stash --> save the changes into some temp area without committing
+
+git stash pop () -> reverts the git stash (get changes from temp area to workspace)
+
+
+git cherry-pick:
+---------------
+I am developing 1 feature, but i found some parts of the feature already developed in another branch, 
+* git cherry-pick commit1 commit2
+Any merge conflicts, resolve it & continue
+* git cherry-pick --continue
+
