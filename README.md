@@ -32,6 +32,7 @@ when to use Merge vs Rebase ?
 * sit & resole conflicts
 * git commit <resolved conflicts>
 
+
 ### Branching Strategy
 1. What are the branches
 2. How you bring changes from Dev to PROD
@@ -135,4 +136,7 @@ main branch -> only 1 branch -> implemented in startups
 * git squash
 * git stash
 * git cherry-pick
+
+=======
+### Branching Strategy
 
